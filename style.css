@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px;
+}
+
+.board-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	width: 550px;
+	height: 550px;
+	border: 1px solid #000;
+}
+
+.cell {
+	width: calc(100% / 7);
+	height: calc(100% / 7);
+	background-color: #fff;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+.cell.filled.player1 {
+	background-color: #ff4136;
+}
+
+.cell.filled.player2 {
+	background-color: #0074d9;
+}
+
+.player-turn-display {
+	text-align: center;
+	margin: 20px;
+	font-size: 24px;
+}
+
+.winner-display {
+	text-align: center;
+	margin: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #0074d9;
+}
+
+.play-again-button {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #0074d9;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
